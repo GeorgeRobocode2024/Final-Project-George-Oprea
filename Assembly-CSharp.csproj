@@ -39,6 +39,9 @@
      <Compile Include="Assets\Scripts\Helper Scripts\TagHolder.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\PlayerMovement.cs" />
      <Compile Include="Assets\Scripts\Player Scripts\MouseLook.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\PlayerSprintAndCrouch.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\PlayerFootsteps.cs" />
+     <Compile Include="Assets\Scripts\Player Scripts\PlayerStats.cs" />
      <None Include="Assets\Shaders\Standard\_Antialiasing\FXAAPreset2.shader" />
      <None Include="Assets\Shaders\Standard\_DepthOfField\Bokeh34.shader" />
      <None Include="Assets\Shaders\Standard\_DepthOfField\SeparableWeightedBlurDof34.shader" />
@@ -627,34 +630,34 @@
         <HintPath>C:\Program Files\Unity\Hub\Editor\2020.3.48f1\Editor\Data\NetStandard\compat\2.0.0\shims\netfx\System.Xml.Serialization.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VSCode.Editor">
-        <HintPath>C:\Unity George\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
+        <HintPath>C:\Users\Student\Desktop\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.VSCode.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-        <HintPath>C:\Unity George\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
+        <HintPath>C:\Users\Student\Desktop\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.VisualStudio.Editor">
-        <HintPath>C:\Unity George\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
+        <HintPath>C:\Users\Student\Desktop\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.VisualStudio.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline.Editor">
-        <HintPath>C:\Unity George\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
+        <HintPath>C:\Users\Student\Desktop\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.Timeline.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Timeline">
-        <HintPath>C:\Unity George\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
+        <HintPath>C:\Users\Student\Desktop\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.Timeline.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-        <HintPath>C:\Unity George\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
+        <HintPath>C:\Users\Student\Desktop\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEditor.UI">
-        <HintPath>C:\Unity George\Final-Project-George-Oprea\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
+        <HintPath>C:\Users\Student\Desktop\Final-Project-George-Oprea\Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PlasticSCM.Editor">
-        <HintPath>C:\Unity George\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
+        <HintPath>C:\Users\Student\Desktop\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.PlasticSCM.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Rider.Editor">
-        <HintPath>C:\Unity George\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
+        <HintPath>C:\Users\Student\Desktop\Final-Project-George-Oprea\Library\ScriptAssemblies\Unity.Rider.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.UI">
-        <HintPath>C:\Unity George\Final-Project-George-Oprea\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
+        <HintPath>C:\Users\Student\Desktop\Final-Project-George-Oprea\Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
   </ItemGroup>
   <ItemGroup>

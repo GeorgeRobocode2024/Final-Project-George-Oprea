@@ -1,9 +1,9 @@
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MouseLook : MonoBehaviour
-{
+public class MouseLook : MonoBehaviour {
+
     [SerializeField]
     private Transform playerRoot, lookRoot;
 
@@ -40,36 +40,35 @@ public class MouseLook : MonoBehaviour
 
     private int last_Look_Frame;
 
-    // Start is called before the first frame update
-    void Start()
-    {
+    // Use this for initialization
+    void Start () {
+
         Cursor.lockState = CursorLockMode.Locked;
 
-    }
+	}
+	
+	// Update is called once per frame
+	void Update () {
 
-    // Update is called once per frame
-    void Update()
-    {
         LockAndUnlockCursor();
 
-        if(Cursor.lockState == CursorLockMode.Locked)
-        {
+        if(Cursor.lockState == CursorLockMode.Locked) {
             LookAround();
         }
-    }
 
-    
-    void LockAndUnlockCursor()
-    {
-        if(Input.GetKeyDown(KeyCode.Escape))
-        {
-            if(Cursor.lockState == CursorLockMode.Locked)
-            {
+	}
+
+    void LockAndUnlockCursor() {
+
+        if(Input.GetKeyDown(KeyCode.Escape)) {
+
+            if(Cursor.lockState == CursorLockMode.Locked) {
+
                 Cursor.lockState = CursorLockMode.None;
 
 
-            } else
-            {
+            } else {
+
                 Cursor.lockState = CursorLockMode.Locked;
                 Cursor.visible = false;
 
@@ -77,17 +76,71 @@ public class MouseLook : MonoBehaviour
 
         }
 
-    }
+    } // lock and unlock
 
-    void LookAround()
-    {
-        current_Mouse_Look = new Vector2(Input.GetAxis(MouseAxis.MOUSE_Y), Input.GetAxis(MouseAxis.MOUSE_X));
+    void LookAround() {
+
+        current_Mouse_Look = new Vector2(
+            Input.GetAxis(MouseAxis.MOUSE_Y), Input.GetAxis(MouseAxis.MOUSE_X));
 
         look_Angles.x += current_Mouse_Look.x * sensivity * (invert ? 1f : -1f);
         look_Angles.y += current_Mouse_Look.y * sensivity;
 
-        look_Angles.x += Mathf.Clamp(look_Angles.x, default_Look_Limits.x, default_Look_Limits.y);
+        look_Angles.x = Mathf.Clamp(look_Angles.x, default_Look_Limits.x, default_Look_Limits.y);
 
-        current_Roll_Angle = Mathf.Lerp(current_Roll_Angle, Input.GetAxisRaw(MouseAxis.MOUSE_X)* roll_Angle, Time.deltaTime * roll_Speed);
-    }
-}
+        //current_Roll_Angle =
+            //Mathf.Lerp(current_Roll_Angle, Input.GetAxisRaw(MouseAxis.MOUSE_X)
+                       //* roll_Angle, Time.deltaTime * roll_Speed);
+
+        lookRoot.localRotation = Quaternion.Euler(look_Angles.x, 0f, 0f);
+        playerRoot.localRotation = Quaternion.Euler(0f, look_Angles.y, 0f);
+
+
+    } // look around
+
+
+} // class
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
