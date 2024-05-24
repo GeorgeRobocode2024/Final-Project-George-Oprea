@@ -31,3 +31,30 @@ public class EnemyAnimator : MonoBehaviour {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

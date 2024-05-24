@@ -3,7 +3,13 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Axe
+  - Crosshair
+  - Look Root
+  - FP Camera
+  - Arrow
+  - Enemy
   layers:
   - Default
   - TransparentFX
@@ -14,9 +20,9 @@ TagManager:
   - 
   - 
   - PostProcessing
-  - FirstPerson
-  - 
-  - 
+  - FirsPerson
+  - Enemy
+  - Player
   - 
   - 
   - 
